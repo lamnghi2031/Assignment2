@@ -6,6 +6,8 @@ const path = require('path');
 
 const router = express.Router();
 
+xPORT = process.env.PORT || 3000;
+
 app.use(express.static(path.join(__dirname, '/controllers/public')));
 
 router.get('/',function(req,res){
@@ -40,8 +42,6 @@ app.use("/report", ReportController);
 //   });
 
 //add the router
-const PORT = process.env.PORT || 3000;
+app.listen(xPORT);
 
-app.listen(PORT);
-
-console.debug('Server is running ' + PORT);
+console.log("\n WEB tại PORT: ", xPORT);
