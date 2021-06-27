@@ -1,0 +1,243 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-border: #ccc;
+  --color-body-darked: #5c5577;
+  --border-radius: 30px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+/* Inputs */
+.input {
+  border-radius: 30px;
+  width: 85%;
+  padding: 1rem 3rem;
+  outline: 0;
+  margin: 1rem auto;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 30px;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  outline: 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--block {
+  width: 100%;
+  display: block;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #fc6943;
+}
+
+.btn--outline {
+  border: 1px solid var(--color-headings);
+  color: var(--color-headings);
+  background-color: #fff;
+}
+
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
+/* Login card*/
+.card--login {
+  max-width: 500px;
+  box-shadow: 0 0 20px 10px #ccc;
+  margin: 5rem auto;
+  padding: 5rem;
+}
+
+.card--login_header {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.card--login_content {
+  text-align: center;
+}
+
+/* nav */
+.nav {
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  padding: 2rem 3rem;
+  justify-content: center;
+}
+
+.list li {
+  margin: 0 2rem;
+}
+
+.list a:hover {
+  color: #ccc;
+}
+
+/**/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--1x4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Card */
+.card {
+  border: 1px solid #ccc;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.card__content {
+  text-align: left;
+}
+
+.card__price {
+  color: var(--color-accent);
+}
+
+/* Product */
+.product__images {
+  width: 100%;
+  max-width: 500px;
+}
+
+.product__price {
+  color: var(--color-accent);
+}
+
+.product__heading {
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.product__content li {
+  margin: 2rem;
+}
+
+/* input group */
+.input--group {
+  margin: 0 auto;
+  border-radius: 30px;
+  white-space: nowrap;
+  max-width: 500px;
+}
+
+.input--group .input {
+  margin: 0;
+}
+
+.input--group .btn {
+  padding: 1rem 2rem;
+}
+
+/* Block */
+.block {
+  margin-bottom: 5rem;
+}
+
+/* Topic */
+.topic {
+  background-color: #000;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.topic h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+}
+
+.footer h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.footer__content a {
+  font-size: 1.6rem;
+}
